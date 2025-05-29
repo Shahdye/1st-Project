@@ -117,7 +117,7 @@ li {
   opacity: 1;
 }
 
-.menu--open{
+.menu--open {
   max-height: 100vh;
   overflow-y: hidden;
 }
@@ -249,6 +249,7 @@ button:active {
 
 .highlight__wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .highlight {
@@ -281,6 +282,7 @@ button:active {
 .highlight__subtitle {
   font-size: 20px;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 #features {
@@ -376,6 +378,28 @@ footer {
   padding: 0 8px;
 }
 
+@media (max-width: 768px) {
+  .header__description {
+    padding: 0px 24px;
+  }
+
+  h1{
+    font-size: 40px;
+  }
+
+  h2{
+    font-size: 26px;
+  }
+
+  button{
+    font-size: 18px;
+  }
+
+  .book{
+    width: 50%;
+  }
+}
+
 @media (max-width: 550px) {
   .nav__link {
     display: none;
@@ -383,5 +407,13 @@ footer {
 
   .btn__menu {
     display: block;
+  }
+
+  .highlight{
+    width: 100%;
+  }
+
+  .highlight:not(:last-child){
+    margin-bottom: 24px;
   }
 }
